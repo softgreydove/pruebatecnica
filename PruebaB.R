@@ -2,7 +2,7 @@
 ###PARTE B DE LA PRUEBA TÉCNICA PARA LA VACANTE COMO ANALISTA DE DATOS SR. DE DATA CÍVICA, DICIEMBRE DE 2025.
 
 rm(list = ls())
-setwd("C:/Users/paomy/OneDrive/Escritorio/PruebaTecnica_Guevara")
+setwd("C:/PruebaTecnica")
 library(tidyverse)
 library(ggplot2)
 library(foreign)
@@ -15,7 +15,7 @@ library(treemapify)
 
 
 
-edr24 <- read.dbf("C:/Users/paomy/OneDrive/Escritorio/PruebaTecnica_Guevara/PruebaB/defunciones_base_datos_2024_dbf/DEFUN24.dbf")
+edr24 <- read.dbf("C:/PruebaTecnica/PruebaB/defunciones_base_datos_2024_dbf/DEFUN24.dbf")
 
 # ANÁLISIS EXPLORATORIO DE LOS HOMICIDIOS REGISTRADOS EN MÉXICO DURANTE 2024 ----
 
@@ -372,4 +372,5 @@ ggplot(
       hjust = 0.5,
       size = 15
     )
+
   )
